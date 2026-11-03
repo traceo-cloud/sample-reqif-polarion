@@ -1,0 +1,156 @@
+{
+  "schema": "traceo.import-receipt/v1",
+  "source_sha256": "f6d5b382eaea2d657d44c747b8556ba93504d62cb2b2c290f83606be7774fb95",
+  "declared_format": "reqif",
+  "detected_tool": "polarion",
+  "tool_id": "Polarion ALM",
+  "verdict": "lossy",
+  "counts": {
+    "objects": {
+      "in": 4,
+      "out": 4
+    },
+    "headings": {
+      "in": 1,
+      "out": 1
+    },
+    "attributes": {
+      "in": 21,
+      "out": 21
+    },
+    "enumeration_values": {
+      "in": 6,
+      "out": 6
+    },
+    "link_types": {
+      "in": 3,
+      "out": 2
+    },
+    "links": {
+      "in": 3,
+      "out": 2
+    },
+    "hierarchy_nodes": {
+      "in": 4,
+      "out": 4
+    },
+    "history_entries": {
+      "in": 0,
+      "out": 0
+    },
+    "baselines": {
+      "in": 0,
+      "out": 0
+    },
+    "attachments": {
+      "in": 0,
+      "out": 0
+    }
+  },
+  "links_by_type": {
+    "has parent": {
+      "in": 1,
+      "out": 0
+    },
+    "refines": {
+      "in": 1,
+      "out": 1
+    },
+    "relates to": {
+      "in": 1,
+      "out": 1
+    }
+  },
+  "attributes_by_datatype": {
+    "BOOLEAN": {
+      "in": 2,
+      "out": 2
+    },
+    "ENUMERATION": {
+      "in": 6,
+      "out": 6
+    },
+    "REAL": {
+      "in": 1,
+      "out": 1
+    },
+    "STRING": {
+      "in": 9,
+      "out": 9
+    },
+    "XHTML": {
+      "in": 3,
+      "out": 3
+    }
+  },
+  "drops": [
+    {
+      "cls": "links",
+      "source_ref": "ID_REL_12_SYS",
+      "reason": "dangling_link",
+      "detail": "TARGET names no imported object"
+    },
+    {
+      "cls": "link_types",
+      "source_ref": "has parent",
+      "reason": "dangling_link",
+      "detail": "every link of this type was dangling"
+    }
+  ],
+  "transforms": [
+    {
+      "cls": "objects",
+      "source_ref": "ID_DRN-1",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status, priority"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "ID_DRN-12",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from ReqIF.Text; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "ID_DRN-12",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, priority"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "ID_DRN-13",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from ReqIF.Text; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "ID_DRN-13",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, priority"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "ID_DRN-14",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from ReqIF.Text; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "ID_DRN-14",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status, priority"
+    },
+    {
+      "cls": "links",
+      "source_ref": "ID_REL_14_13",
+      "reason": "unmapped_link_type→bucket",
+      "detail": "'refines' -> relates_to; original name kept on the edge"
+    }
+  ],
+  "id_map": {
+    "ID_DRN-1": "DRN-1",
+    "ID_DRN-12": "DRN-12",
+    "ID_DRN-13": "DRN-13",
+    "ID_DRN-14": "DRN-14"
+  }
+}
