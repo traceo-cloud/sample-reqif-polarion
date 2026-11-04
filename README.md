@@ -63,8 +63,8 @@ These receipts were written by Traceo's ReqIF importer at commit `90cfc15` on 20
 
 ## Try it
 
-Traceo's import screen is not released yet. When it is, importing one of these files will show
-this receipt before anything is written.
+[Sign up](https://app.traceo.cloud/signup), open Import and choose a file from this repository. Traceo
+shows its receipt before anything is written.
 
 ## Names
 
